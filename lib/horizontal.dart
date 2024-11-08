@@ -9,24 +9,30 @@ class HorizontalPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('List View Horizontal'),
       ),
-      body: const  SingleChildScrollView(
+      body: ListView(
         scrollDirection: Axis.horizontal,
-        child: Row(
-          children: const <Widget>[
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.map, size: 50),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.photo_album, size: 50),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.phone, size: 50),
-            ),
-          ],
-        ),
+        children: const <Widget>[
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.map, size: 50),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.photo_album, size: 50),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.phone, size: 50),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.message, size: 50),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.computer, size: 50),
+          ),
+        ],
       ),
     );
   }
